@@ -1,0 +1,84 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    /*margin: auto;*/}
+div h1{
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: #27374D;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.about {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.btn-about {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 50px;
+    background-color: #526D82;
+    color: white;
+    font-style: Helvetica;
+    font-size: medium;
+    text-decoration: none;
+}
+div .btn-about{
+    height: 50px;
+}
+.welcome {
+    margin-bottom: 50px;
+    height: 300px;
+    background-image: url(./images/for-div-bg.jpg);
+    background-position: top center;
+    background-size: auto;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 -5px;
+}
+.card{
+    margin: 0 .6em;
+
+}
+.row-justify-content-center, .anaderwan {
+    display: flex;
+    align-items: center;
+    align-content: row;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.footer {
+    height: 100px;
+    padding: 20px;
+}
+/*.anaderwan {
+    display: flex;
+    align-items: center;
+    align-content: row;
+    flex-direction: row;
+    justify-content: center;
+}*/
+.btn {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #526D82;
+}
