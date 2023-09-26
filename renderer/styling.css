@@ -12,6 +12,7 @@ div h1{
 body {
     background-color: #27374D; 
     background-repeat: no-repeat;
+    background-image: url(./images/for-div-bg.jpg);
 }
 .about {
     text-align: center;
@@ -37,7 +38,7 @@ div .btn-about{
 }
 .welcome {
     margin-bottom: 50px;
-    height: 300px;
+    height: 100px;
     background-position: top center;
     background-size: auto;
 }
