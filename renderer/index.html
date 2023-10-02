@@ -4,15 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="refresh" content="30">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link href="./styling.css" rel="stylesheet">
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/styling.css" rel="stylesheet">
         <title>Ellie's Hub</title>
     </head>
     <body>
-        <div class="welcome">
-            <h1 class="welcome-page"><i>Ellie's Hub</i></h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ellie's Hub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacts.html">Contacts</a>
+              </li>
+              <!-- <li class="nav-item"> 
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>-->
+            </ul>
+          </div>
         </div>
-            <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+      </nav>
+      <!-- End of navbar -->
+      <div class="container-fluid ">
+        <div class="row mb-5 pb-5">
+            <!-- <div class="col"> -->
+                <h1 class="m-4 p-5">Ellie's Hub</h1>
+        </div>
+        </div>
+        <!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -28,7 +57,7 @@
                                         <div class="card-body text-center">
                                           <h5 class="card-title">ABOUT</h5>
                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="./about.html" class="btn btn-primary">View</a>
+                                          <a href="..." class="btn btn-primary">View</a>
                                         </div>
                                       </div>
                                 </div>
@@ -137,84 +166,110 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-sm-none " data-bs-ride="carousel">
-                <div class="carousel-indicators">
+              <!-- End of the web view carousel -->
+
+              <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-lg-none">
+                <!-- <div class="carousel-indicators"> 
                   <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </div>-->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">ABOUT</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="./about.html" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">OOP Calculator</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">OpenAI integration</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">RMI Project</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Tech Stack</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">CV</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="cards-wrapper">
-                      <div class="card">
-                          <img src="./images/coffee.jpg" class="card-img-top" alt="...">
-                          <div class="card-body text-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                    <div class="card mb-3 mx-4" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="./images/coffee.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">HomeHaven</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="prev">
@@ -230,6 +285,6 @@
     <footer class="footer">
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="./js/renderer.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script src="./js/renderer.js"></script> -->
 </html>

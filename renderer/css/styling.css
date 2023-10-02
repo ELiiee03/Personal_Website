@@ -12,7 +12,7 @@ div h1{
 body {
     background-color: #27374D; 
     background-repeat: no-repeat;
-    background-image: url(./images/for-div-bg.jpg);
+    background-image: url();
 }
 .about {
     text-align: center;
@@ -50,15 +50,16 @@ div .btn-about{
     flex-direction: row;
     margin: 15px;
 }
-@media  screen and (max-width: 567px) {
+@media  screen and (max-width: 567px) {  */
     .cards-wrapper:not(:first-child){
         display: none;
     }
 }
-@media  screen and (min-width: 567px) {
+@media  screen and (min-width: 567px) { 
 .card{
     margin: 0 .5em;
     width:  18rem;
+}
 }
 .row-justify-content-center {
     display: flex;
@@ -68,7 +69,7 @@ div .btn-about{
     justify-content: center;
     padding-bottom: 50px;
 }
-}
+
 .footer {
     height: 100px;
     padding: 20px;
